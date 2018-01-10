@@ -5,6 +5,8 @@ class PigLatinizer
     @text = text.downcase
   end
 
+  def splits
+    @new= @text.split(' ')
   def to_piglatinize
     new_text = @text.split(' ')
     new_text.map do |word|
