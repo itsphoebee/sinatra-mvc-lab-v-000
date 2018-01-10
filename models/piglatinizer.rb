@@ -8,10 +8,11 @@ class PigLatinizer
   end
 
   def piglatinize(word)
-    if word.start_with?('a','e','i','o','u')
+    vowels = ['a','e','i','o','u']
+    if vowels.include?(word[0])
         word << 'way'
     elsif
-      word[1].include?('a'||'e'||'i'||'o'||'u')
+      vowels.include?(word[1])
       word << word.slice(0)+'ay'
       word[0] = ''
       word
