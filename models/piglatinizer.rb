@@ -7,7 +7,7 @@ class PigLatinizer
     new_text.join(" ")
   end
 
-  def to_piglatinize(word)
+  def piglatinize(word)
     if word.start_with?('a','e','i','o','u')
         word << 'ay'
     elsif
