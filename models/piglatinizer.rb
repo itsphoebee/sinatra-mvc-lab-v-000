@@ -5,7 +5,7 @@ class PigLatinizer
   end
 
   def to_piglatinize
-    new_text.map do |word|
+    @new_text.map do |word|
       if word.start_with?('a','e','i','o','u')
         word << 'ay'
       else word.split('')
