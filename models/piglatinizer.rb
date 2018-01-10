@@ -2,7 +2,7 @@ class PigLatinizer
 
   def to_pig_latin(sentence)
     new_text = sentence.split(" ").map do |word|
-      piglatinize(word)
+      piglatinize(word.downcase)
     end
     new_text.join(" ")
   end
