@@ -11,11 +11,6 @@ class PigLatinizer
     vowels = ['a','e','i','o','u','A','E','I','O','U']
     if vowels.include?(word[0])
         word << 'way'
-    elsif
-      vowels.include?(word[1])
-      word << word.slice(0)+'ay'
-      word[0] = ''
-      word
     else
       word << word.slice(0..1)+'ay'
       word[0..1] = ''
@@ -23,3 +18,5 @@ class PigLatinizer
     end
   end
 end
+#word find where the first vowel is
+#cut off the letters before it and throw it at the end +'ay'
