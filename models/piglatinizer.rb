@@ -13,10 +13,10 @@ class PigLatinizer
     if vowels.include?(w[0])
         w << 'way'
     elsif
-      vowels.include?(word[1])
-      word << word.slice(0)+'ay'
-      word[0] = ''
-      word
+      vowels.include?(w[1])
+      w << w.slice(0)+'ay'
+      w[0] = ''
+      w
     else
       word << word.slice(0..1)+'ay'
       word[0..1] = ''
