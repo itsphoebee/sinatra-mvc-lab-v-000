@@ -1,9 +1,4 @@
 class PigLatinizer
-  attr_reader :text
-
-  def initialize(text)
-    @text = text.downcase
-  end
 
   def to_piglatinize
     new_text = @text.split(' ')
