@@ -15,7 +15,7 @@ class PigLatinizer
       word << word.slice(0)+'ay'
       word[0] = ''
       word
-        else
+    else
           word << word.slice(0..1)+'ay'
           word[0..1] = ''
           word
