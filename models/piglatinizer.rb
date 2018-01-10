@@ -11,9 +11,10 @@ class PigLatinizer
     vowels = ['a','e','i','o','u','A','E','I','O','U']
     if vowels.include?(word[0])
         word << 'way'
-  #  else
-  #    a = word.split(/([aeiouAEIOU].*)/)
-  #    a[1] + n[0] + 'ay'
+    else
+      new_word = []
+      a = word.split(/([aeiouAEIOU].*)/)
+      new_word << a[1] + n[0] + 'ay'
     end
   end
 end
