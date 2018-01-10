@@ -1,9 +1,12 @@
 class PigLatinizer
 
   def to_pig_latin(sentence)
+    sentence.split(" ").map do |word|
+      word.to_piglatinize
+    end
   end
+  
   def to_piglatinize
-    new_text = @text.split(' ')
     new_text.map do |word|
       if word.start_with?('a','e','i','o','u')
         word << 'ay'
