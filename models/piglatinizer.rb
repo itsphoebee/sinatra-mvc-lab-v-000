@@ -15,7 +15,7 @@ class PigLatinizer
       new_word = []
       a = word.split(/([aeiouAEIOU].*)/)
       new_word << a[1] + a[0] + 'ay'
-      new_word[0]
+      new_word.first
     end
   end
 end
