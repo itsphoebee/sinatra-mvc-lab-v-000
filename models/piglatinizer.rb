@@ -22,6 +22,6 @@ class PigLatinizer
         end
       end
     end
-    new_text.flatten
+    new_text
   end
 end
