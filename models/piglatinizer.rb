@@ -8,19 +8,18 @@ class PigLatinizer
   end
 
   def piglatinize(word)
-    w = word.downcase
-    vowels = ['a','e','i','o','u']
-    if vowels.include?(w[0])
-        w << 'way'
+    vowels = ['a','e','i','o','u','A','E','I','O','U']
+    if vowels.include?(word[0])
+        word << 'way'
     elsif
-      vowels.include?(w[1])
-      w << w.slice(0)+'ay'
-      w[0] = ''
-      w
+      vowels.include?(word[1])
+      word << word.slice(0)+'ay'
+      word[0] = ''
+      word
     else
-      w << w.slice(0..1)+'ay'
-      w[0..1] = ''
-      w
+      word << word.slice(0..1)+'ay'
+      word[0..1] = ''
+      word
     end
   end
 end
