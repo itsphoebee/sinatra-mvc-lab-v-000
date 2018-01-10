@@ -1,11 +1,13 @@
 class PigLatinizer
+  attr_reader :text
 
-  def piglatin(sentence)
-    @new_text=sentence.split(' ')
+  def initialize(text)
+    @text = text.downcase
   end
 
   def to_piglatinize
-    @new_text.map do |word|
+    new_text = @text.split(' ')
+    new_text.map do |word|
       if word.start_with?('a','e','i','o','u')
         word << 'ay'
       else word.split('')
