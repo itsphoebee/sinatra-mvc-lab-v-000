@@ -7,9 +7,8 @@ class PigLatinizer
     new_text.join(" ")
   end
 
-  def to_piglatinize
-    new_text.map do |word|
-      if word.start_with?('a','e','i','o','u')
+  def to_piglatinize(word)
+    if word.start_with?('a','e','i','o','u')
         word << 'ay'
       else word.split('')
         if word[1].include?('a'||'e'||'i'||'o'||'u')
