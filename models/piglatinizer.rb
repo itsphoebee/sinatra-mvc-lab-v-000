@@ -4,4 +4,7 @@ class PigLatinize
   def initialize(text)
     @text = text
   end
+
+  def to_piglatinize
+  end
 end
