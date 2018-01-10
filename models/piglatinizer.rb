@@ -22,5 +22,6 @@ class PigLatinize
         end
       end
     end
+    new_text
   end
 end
