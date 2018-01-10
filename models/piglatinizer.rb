@@ -4,6 +4,7 @@ class PigLatinizer
     new_text = sentence.split(" ").map do |word|
       word.to_piglatinize
     end
+    new_text.join(" ")
   end
 
   def to_piglatinize
